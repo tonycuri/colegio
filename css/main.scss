@@ -1,29 +1,26 @@
-body {
+body{
   font-size: 16px;
   font-family: 'Open Sans' , sans-serif;
 }
 
 /******************* Media queries*******/
-@media screen and (min-width: 480px) {
-  body {
+@media screen and (min-width: 480px){
+  body{
     background: green;
   }
 }
-
-@media screen and (min-width: 600px) {
-  body {
+@media screen and (min-width: 600px){
+  body{
     background: red;
   }
 }
-
-@media screen and (min-width: 767px) {
-  body {
+@media screen and (min-width: 767px){
+  body{
     background: yellow;
   }
 }
-
-@media screen and (min-width: 950px) {
-  body {
+@media screen and (min-width: 950px){
+  body{
     background: peru;
   }
 }
