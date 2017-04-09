@@ -1,0 +1,68 @@
+.telefonos{
+ display:none;
+}
+#menu{
+  margin-top: -32px;
+  background: $color1;
+  position:relative;
+  height: 70px;
+  z-index:99;
+  h1{
+    width: 250px;
+    img{
+      width: 100%;
+    }
+  }
+  span{
+    position:absolute;
+    top:5px;
+    right:5px;
+    color:#fff;
+    z-index:99;
+    font-size: 2em;
+    cursor:pointer;
+  }
+  #card_menu{
+    z-index: 100;
+    position:absolute;
+    top:0;
+    left:-100%;
+	  width: 80%;
+	  transition: all 0.8s;
+    background: $color1;
+    height: auto;
+    figure{
+      width: 250px;
+      // margin-left: -10px;
+      img{
+        width: 100%;
+      }
+    }
+    nav{
+      ul{
+        margin-left: -30px;
+        li{
+         list-style: none;
+         margin-bottom: 10px;
+         cursor:pointer;
+         padding:0 20px;
+         a{
+          text-decoration: none;
+           text-transform: uppercase;
+           font-weight: bold;
+           padding: 15px;
+           display:block;
+           border-top:1px solid rgba(255,255,255,0.5);
+           &:hover{
+             color:$color1;
+             background: #FFF;
+           }
+         }
+        }
+      }
+    }
+  }
+}
+.slider{
+
+}

@@ -1,0 +1,124 @@
+body {
+  background: #f2f2f2;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif; }
+
+a {
+  color: #ffffff; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.mostrar {
+  left: -100%; }
+
+.telefonos {
+  display: none; }
+
+#menu {
+  margin-top: -32px;
+  background: #5D0909;
+  position: relative;
+  height: 70px;
+  z-index: 99; }
+  #menu h1 {
+    width: 250px; }
+    #menu h1 img {
+      width: 100%; }
+  #menu span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    z-index: 99;
+    font-size: 2em;
+    cursor: pointer; }
+  #menu #card_menu {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    transition: all 0.8s;
+    background: #5D0909;
+    height: auto; }
+    #menu #card_menu figure {
+      width: 250px; }
+      #menu #card_menu figure img {
+        width: 100%; }
+    #menu #card_menu nav ul {
+      margin-left: -30px; }
+      #menu #card_menu nav ul li {
+        list-style: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 0 20px; }
+        #menu #card_menu nav ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 15px;
+          display: block;
+          border-top: 1px solid rgba(255, 255, 255, 0.5); }
+          #menu #card_menu nav ul li a:hover {
+            color: #5D0909;
+            background: #FFF; }
+
+@media screen and (min-width: 480px) {
+  body {
+    background: green; } }
+@media screen and (min-width: 600px) {
+  body {
+    background: yellow; } }
+@media screen and (min-width: 767px) {
+  body {
+    background: orange; }
+
+  .telefonos {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    height: 50px; }
+    .telefonos p {
+      display: inline-block;
+      width: auto;
+      font-size: 14px;
+      margin-right: 25px; }
+
+  #menu {
+    height: 100px;
+    margin-top: 10px; }
+    #menu h1 {
+      display: none; }
+    #menu span {
+      display: none; }
+    #menu #card_menu {
+      left: 0;
+      width: 100%; }
+      #menu #card_menu a {
+        width: 35%;
+        display: inline-block; }
+        #menu #card_menu a figure {
+          width: 80%; }
+      #menu #card_menu nav {
+        width: 64%;
+        display: inline-block;
+        vertical-align: middle; }
+        #menu #card_menu nav ul {
+          margin: 0; }
+          #menu #card_menu nav ul li {
+            display: inline-block;
+            padding: 0;
+            margin-left: 10px; }
+            #menu #card_menu nav ul li a {
+              border-top: none;
+              padding: 10px;
+              font-size: 12px;
+              width: auto; }
+              #menu #card_menu nav ul li a:hover {
+                border-radius: 5px; } }
+@media screen and (min-width: 950px) {
+  body {
+    background: blue; } }

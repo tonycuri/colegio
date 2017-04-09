@@ -1,0 +1,79 @@
+@media screen and (min-width: 480px){
+  body{
+    background: green;
+  }
+}
+@media screen and (min-width: 600px){
+  body{
+    background: yellow;
+  }
+}
+@media screen and (min-width: 767px){
+  body{
+    background: orange;
+  }
+  .telefonos{
+    display:block;
+    text-align: center;
+    margin:0 auto;
+    height: 50px;
+    p{
+      display:inline-block;
+      width:auto;
+      font-size: 14px;
+      margin-right:25px;
+    }
+  }
+  #menu{
+    height: 100px;
+    margin-top: 10px;
+    h1{
+      display:none;
+    }
+    span{
+      display:none;
+    }
+    #card_menu{
+      left:0;
+      width: 100%;
+      a{
+        width: 35%;
+        display:inline-block;
+        figure{
+          width: 80%;
+          // border:1px solid green;
+        }
+      } 
+      nav{
+        width: 64%;  
+        display:inline-block;
+        // border:1px solid blue;
+        vertical-align: middle;
+        ul{
+          margin: 0;
+          li{
+            display:inline-block;
+            padding: 0;
+            margin-left: 10px;
+            a{
+              border-top:none;
+              padding: 10px;
+              font-size: 12px;
+              width:auto;
+              &:hover{
+                border-radius:5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media screen and (min-width: 950px){
+  body{
+    background: blue;
+  }
+
+}

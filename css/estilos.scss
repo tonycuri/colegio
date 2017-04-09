@@ -1,0 +1,31 @@
+$fondo: #f2f2f2;
+$color1: #5D0909;
+$color2: #970F13;
+$texto: #292929;
+
+$font-family:'Open sans', sans-serif;
+
+$font-size: 16px;
+
+body{
+  background: $fondo;
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+a{
+  color:#ffffff;
+}
+
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+.mostrar{
+  left:-100%;
+}
+
+@import "header";
+@import "mediaqueries";
+
