@@ -76,11 +76,38 @@
       }
     }
   }
-  
+   .nosotros{
+    .nosotros-text{
+      width: 50%;
+      display:inline-block;
+    }
+    .nosotros-img{
+      margin-top:0;
+      margin-left: 1%;
+      width: 48%;
+      display:inline-block;
+      vertical-align: top;
+    }
+  }  
 }
 @media screen and (min-width: 950px){
   body{
     background: blue;
+  }
+   .nosotros{
+    .nosotros-text{
+      width: 58%;
+      display:inline-block;
+      font-size: 1.1em;
+      line-height: 35px;
+    }
+    .nosotros-img{
+      margin-top:0;
+      margin-left: 1%;
+      width: 40%;
+      display:inline-block;
+      vertical-align: top;
+    }
   }
 
 }

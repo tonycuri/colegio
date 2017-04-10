@@ -14,6 +14,15 @@ a {
 .mostrar {
   left: -100%; }
 
+h2 {
+  text-align: center;
+  margin: 40px auto;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  padding: 10px 0;
+  width: 220px;
+  text-transform: uppercase; }
+
 .telefonos {
   display: none; }
 
@@ -43,7 +52,7 @@ a {
     left: -100%;
     width: 80%;
     transition: all 0.8s;
-    background: rgba(93, 9, 9, 0.5);
+    background: rgba(93, 9, 9, 0.7);
     height: auto; }
     #menu #card_menu figure {
       width: 250px; }
@@ -67,6 +76,20 @@ a {
           #menu #card_menu nav ul li a:hover {
             color: #5D0909;
             background: #FFF; }
+
+.nosotros-text {
+  width: 100%;
+  text-align: justify;
+  line-height: 26px; }
+
+.nosotros-img {
+  margin-top: 20px;
+  width: 100%; }
+  .nosotros-img figure {
+    margin: 0;
+    width: 100%; }
+    .nosotros-img figure img {
+      width: 100%; }
 
 @media screen and (min-width: 480px) {
   body {
@@ -126,7 +149,29 @@ a {
               font-size: 12px;
               width: auto; }
               #menu #card_menu nav ul li a:hover {
-                border-radius: 5px; } }
+                border-radius: 5px; }
+
+  .nosotros .nosotros-text {
+    width: 50%;
+    display: inline-block; }
+  .nosotros .nosotros-img {
+    margin-top: 0;
+    margin-left: 1%;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top; } }
 @media screen and (min-width: 950px) {
   body {
-    background: blue; } }
+    background: blue; }
+
+  .nosotros .nosotros-text {
+    width: 58%;
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 35px; }
+  .nosotros .nosotros-img {
+    margin-top: 0;
+    margin-left: 1%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; } }

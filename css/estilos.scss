@@ -25,6 +25,15 @@ a{
 .mostrar{
   left:-100%;
 }
+h2{
+  text-align: center;
+  margin:40px auto;
+  border-top:5px solid #000;
+  border-bottom:5px solid #000;
+  padding: 10px 0;
+  width:220px;
+  text-transform: uppercase;
+}
 
 @import "header";
 @import "mediaqueries";

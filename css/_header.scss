@@ -30,7 +30,7 @@
     left:-100%;
 	  width: 80%;
 	  transition: all 0.8s;
-    background: rgba(93,9,9,0.5);
+    background: rgba(93,9,9,0.7);
     height: auto;
     figure{
       width: 250px;
@@ -62,6 +62,22 @@
          }
         }
       }
+    }
+  }
+}
+.nosotros-text{
+  width: 100%;
+  text-align: justify;
+  line-height: 26px;
+}
+.nosotros-img{
+  margin-top:20px;
+  width: 100%;
+  figure{
+    margin: 0;
+    width: 100%;
+    img{
+      width: 100%;
     }
   }
 }
