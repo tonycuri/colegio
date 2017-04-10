@@ -15,8 +15,8 @@
   .telefonos{
     display:block;
     text-align: center;
-    margin:0 auto;
-    height: 50px;
+    margin:20px auto;
+    height: 30px;
     p{
       display:inline-block;
       width:auto;
@@ -34,14 +34,20 @@
       display:none;
     }
     #card_menu{
+      top:0;
       left:0;
       width: 100%;
+      height: auto;
+      background: $color1;
       a{
         width: 35%;
         display:inline-block;
+        vertical-align: middle;
         figure{
           width: 80%;
-          // border:1px solid green;
+          img{
+            display:block;
+          }
         }
       } 
       nav{
@@ -49,6 +55,7 @@
         display:inline-block;
         // border:1px solid blue;
         vertical-align: middle;
+ 
         ul{
           margin: 0;
           li{

@@ -21,12 +21,13 @@ a {
   margin-top: -32px;
   background: #5D0909;
   position: relative;
-  height: 70px;
+  height: 80px;
   z-index: 99; }
   #menu h1 {
     width: 250px; }
     #menu h1 img {
-      width: 100%; }
+      width: 100%;
+      margin-top: 10px; }
   #menu span {
     position: absolute;
     top: 5px;
@@ -38,15 +39,16 @@ a {
   #menu #card_menu {
     z-index: 100;
     position: absolute;
-    top: 0;
+    top: 80px;
     left: -100%;
     width: 80%;
     transition: all 0.8s;
-    background: #5D0909;
+    background: rgba(93, 9, 9, 0.5);
     height: auto; }
     #menu #card_menu figure {
       width: 250px; }
       #menu #card_menu figure img {
+        display: none;
         width: 100%; }
     #menu #card_menu nav ul {
       margin-left: -30px; }
@@ -79,8 +81,8 @@ a {
   .telefonos {
     display: block;
     text-align: center;
-    margin: 0 auto;
-    height: 50px; }
+    margin: 20px auto;
+    height: 30px; }
     .telefonos p {
       display: inline-block;
       width: auto;
@@ -95,13 +97,19 @@ a {
     #menu span {
       display: none; }
     #menu #card_menu {
+      top: 0;
       left: 0;
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      background: #5D0909; }
       #menu #card_menu a {
         width: 35%;
-        display: inline-block; }
+        display: inline-block;
+        vertical-align: middle; }
         #menu #card_menu a figure {
           width: 80%; }
+          #menu #card_menu a figure img {
+            display: block; }
       #menu #card_menu nav {
         width: 64%;
         display: inline-block;
