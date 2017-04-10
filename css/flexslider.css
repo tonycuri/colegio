@@ -17,6 +17,8 @@
 }
 .slides{
   width: 100%;
+  height: auto;
+  max-height:500px;
   overflow: hidden;
 }
 .slides img{
@@ -58,7 +60,7 @@
   display:block;
   text-decoration: none;
   position:absolute;
-  top:25%;
+  top:40%;
   z-index:999;
   width: 50px;
   height: 50px;
@@ -98,11 +100,18 @@
 .flexslider:hover .flex-direction-nav .flex-next{
   opacity: 0.7;
 }
+.flexslider:hover .flex-direction-nav .flex-prev{
+  left: 20px;
+}
+.flexslider:hover .flex-direction-nav .flex-next{
+  right: 20px;
+}
 @media screen and (min-width: 600px){
   .flex-direction-nav a{
     top:40%;
   }
   .flex-caption a{
     font-size: 3em;
+    top:40%;
   }
 }

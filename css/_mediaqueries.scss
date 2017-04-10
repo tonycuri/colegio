@@ -7,6 +7,12 @@
   body{
     background: yellow;
   }
+  .galeria .fotos .foto{
+    width:24%;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
 }
 @media screen and (min-width: 767px){
   body{
@@ -88,7 +94,7 @@
       display:inline-block;
       vertical-align: top;
     }
-  }  
+  }
 }
 @media screen and (min-width: 950px){
   body{

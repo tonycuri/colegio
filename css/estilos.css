@@ -91,12 +91,45 @@ h2 {
     .nosotros-img figure img {
       width: 100%; }
 
+.docentes {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  overflow: hidden; }
+  .docentes figure {
+    width: 100%;
+    margin: 0; }
+    .docentes figure img {
+      width: 100%; }
+
+.galeria {
+  margin-top: 30px;
+  background: #5D0909;
+  padding: 10px; }
+  .galeria h2 {
+    color: #fff;
+    border-color: #fff; }
+  .galeria .fotos {
+    width: 100%; }
+    .galeria .fotos .foto {
+      margin: 0;
+      padding: 0;
+      width: 49.5%;
+      display: inline-block; }
+      .galeria .fotos .foto img {
+        width: 100%; }
+
 @media screen and (min-width: 480px) {
   body {
     background: green; } }
 @media screen and (min-width: 600px) {
   body {
-    background: yellow; } }
+    background: yellow; }
+
+  .galeria .fotos .foto {
+    width: 24%; }
+    .galeria .fotos .foto:hover {
+      transform: scale(1.1); } }
 @media screen and (min-width: 767px) {
   body {
     background: orange; }
