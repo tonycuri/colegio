@@ -1,3 +1,4 @@
+/******NOSOTROS*****/
 .nosotros-text{
   width: 100%;
   text-align: justify;
@@ -27,6 +28,7 @@
     }
   }
 }
+/**********GALERIA**************/
 .galeria{
   margin-top:30px;
   background: $color1;
@@ -49,8 +51,9 @@
     }
   }
 }
-.blog .post{
-  margin-bottom: 30px;
+/******BLOG******/
+.blog .noticia{
+  margin-bottom: 60px;
   figure{
     width: 100%;
     margin: 0;
@@ -58,13 +61,14 @@
       width: 100%;
     }
   }
-  .titulo{
+  .post .titulo{
     margin: 10px 0px;
     .nivel{
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.1em;
       display:inline-block;
+      float:left;
     }
     .fecha{
       display:inline-block;
@@ -72,16 +76,32 @@
       background: $color1;
       border-radius: 5px;
       color: #fff;
-      margin-left: 100px;
+      float:right;
     }
+  }
+  .texto{
+    max-height: 200px;
+    text-align: justify;
+    overflow: hidden;
   }
   a{
     color:$color1;
-    margin-left: 255px;
+    float:right;
     text-decoration: none;
     &:hover{
       text-decoration: underline;
     }
   }
+}
 
+/******FRASE******/
+.frase{
+  width: 100%;
+  background: $color1;
+  p{
+    padding: 50px 0;
+    color:#FFF;
+    text-align: center;
+    // font-family:;
+  }
 }

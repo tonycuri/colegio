@@ -77,6 +77,7 @@ header .telefonos {
             color: #5D0909;
             background: #FFF; }
 
+/******NOSOTROS*****/
 .nosotros-text {
   width: 100%;
   text-align: justify;
@@ -102,6 +103,7 @@ header .telefonos {
     .docentes figure img {
       width: 100%; }
 
+/**********GALERIA**************/
 .galeria {
   margin-top: 30px;
   background: #5D0909;
@@ -119,33 +121,48 @@ header .telefonos {
       .galeria .fotos .foto img {
         width: 100%; }
 
-.blog .post {
-  margin-bottom: 30px; }
-  .blog .post figure {
+/******BLOG******/
+.blog .noticia {
+  margin-bottom: 60px; }
+  .blog .noticia figure {
     width: 100%;
     margin: 0; }
-    .blog .post figure img {
+    .blog .noticia figure img {
       width: 100%; }
-  .blog .post .titulo {
+  .blog .noticia .post .titulo {
     margin: 10px 0px; }
-    .blog .post .titulo .nivel {
+    .blog .noticia .post .titulo .nivel {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.1em;
-      display: inline-block; }
-    .blog .post .titulo .fecha {
+      display: inline-block;
+      float: left; }
+    .blog .noticia .post .titulo .fecha {
       display: inline-block;
       padding: 5px 10px;
       background: #5D0909;
       border-radius: 5px;
       color: #fff;
-      margin-left: 100px; }
-  .blog .post a {
+      float: right; }
+  .blog .noticia .texto {
+    max-height: 200px;
+    text-align: justify;
+    overflow: hidden; }
+  .blog .noticia a {
     color: #5D0909;
-    margin-left: 255px;
+    float: right;
     text-decoration: none; }
-    .blog .post a:hover {
+    .blog .noticia a:hover {
       text-decoration: underline; }
+
+/******FRASE******/
+.frase {
+  width: 100%;
+  background: #5D0909; }
+  .frase p {
+    padding: 50px 0;
+    color: #FFF;
+    text-align: center; }
 
 @media screen and (min-width: 480px) {
   body {
@@ -157,7 +174,22 @@ header .telefonos {
   .galeria .fotos .foto {
     width: 24%; }
     .galeria .fotos .foto:hover {
-      transform: scale(1.1); } }
+      transform: scale(1.1); }
+
+  /*****BLOG****/
+  .blog .noticia {
+    margin-bottom: 50px; }
+    .blog .noticia figure {
+      width: 45%;
+      float: left; }
+    .blog .noticia .post {
+      float: right;
+      width: 50%; }
+      .blog .noticia .post .texto {
+        max-height: 120px; }
+      .blog .noticia .post .boton {
+        margin-top: 10px; } }
+/*****************min-width: 767px**************/
 @media screen and (min-width: 767px) {
   body {
     background: orange; }
@@ -220,7 +252,12 @@ header .telefonos {
     margin-left: 1%;
     width: 48%;
     display: inline-block;
-    vertical-align: top; } }
+    vertical-align: top; }
+
+  /****BLOG*****/
+  .blog .noticia .post .texto {
+    max-height: 180px; } }
+/**************** min-width: 950px ************/
 @media screen and (min-width: 950px) {
   body {
     background: blue; }
@@ -235,4 +272,8 @@ header .telefonos {
     margin-left: 1%;
     width: 40%;
     display: inline-block;
-    vertical-align: top; } }
+    vertical-align: top; }
+
+  /*******BLOG******/
+  .blog .noticia .post .texto {
+    max-height: 230px; } }
