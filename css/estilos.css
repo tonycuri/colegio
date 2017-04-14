@@ -23,7 +23,7 @@ h2 {
   width: 220px;
   text-transform: uppercase; }
 
-.telefonos {
+header .telefonos {
   display: none; }
 
 #menu {
@@ -114,10 +114,38 @@ h2 {
     .galeria .fotos .foto {
       margin: 0;
       padding: 0;
-      width: 49.5%;
+      width: 49%;
       display: inline-block; }
       .galeria .fotos .foto img {
         width: 100%; }
+
+.blog .post {
+  margin-bottom: 30px; }
+  .blog .post figure {
+    width: 100%;
+    margin: 0; }
+    .blog .post figure img {
+      width: 100%; }
+  .blog .post .titulo {
+    margin: 10px 0px; }
+    .blog .post .titulo .nivel {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: inline-block; }
+    .blog .post .titulo .fecha {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #5D0909;
+      border-radius: 5px;
+      color: #fff;
+      margin-left: 100px; }
+  .blog .post a {
+    color: #5D0909;
+    margin-left: 255px;
+    text-decoration: none; }
+    .blog .post a:hover {
+      text-decoration: underline; }
 
 @media screen and (min-width: 480px) {
   body {

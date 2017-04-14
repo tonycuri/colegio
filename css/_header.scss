@@ -1,4 +1,4 @@
-.telefonos{
+header .telefonos{
  display:none;
 }
 #menu{
@@ -61,57 +61,6 @@
            }
          }
         }
-      }
-    }
-  }
-}
-.nosotros-text{
-  width: 100%;
-  text-align: justify;
-  line-height: 26px;
-}
-.nosotros-img{
-  margin-top:20px;
-  width: 100%;
-  figure{
-    margin: 0;
-    width: 100%;
-    img{
-      width: 100%;
-    }
-  }
-}
-.docentes{
-  width: 100%;
-  height: auto;
-  max-height:600px;
-  overflow: hidden;
-  figure{
-    width: 100%;
-    margin: 0;
-    img{
-      width: 100%;
-    }
-  }
-}
-.galeria{
-  margin-top:30px;
-  background: $color1;
-  padding:10px;
-
-  h2{
-    color:#fff;
-    border-color:#fff;
-  }
-  .fotos{
-    width: 100%;
-    .foto{
-      margin: 0;
-      padding: 0;
-      width: 49.5%;
-      display:inline-block;
-      img{
-        width: 100%;
       }
     }
   }

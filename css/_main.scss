@@ -1,0 +1,87 @@
+.nosotros-text{
+  width: 100%;
+  text-align: justify;
+  line-height: 26px;
+}
+.nosotros-img{
+  margin-top:20px;
+  width: 100%;
+  figure{
+    margin: 0;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+}
+.docentes{
+  width: 100%;
+  height: auto;
+  max-height:600px;
+  overflow: hidden;
+  figure{
+    width: 100%;
+    margin: 0;
+    img{
+      width: 100%;
+    }
+  }
+}
+.galeria{
+  margin-top:30px;
+  background: $color1;
+  padding:10px;
+
+  h2{
+    color:#fff;
+    border-color:#fff;
+  }
+  .fotos{
+    width: 100%;
+    .foto{
+      margin: 0;
+      padding: 0;
+      width: 49%;
+      display:inline-block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.blog .post{
+  margin-bottom: 30px;
+  figure{
+    width: 100%;
+    margin: 0;
+    img{
+      width: 100%;
+    }
+  }
+  .titulo{
+    margin: 10px 0px;
+    .nivel{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.1em;
+      display:inline-block;
+    }
+    .fecha{
+      display:inline-block;
+      padding: 5px 10px;
+      background: $color1;
+      border-radius: 5px;
+      color: #fff;
+      margin-left: 100px;
+    }
+  }
+  a{
+    color:$color1;
+    margin-left: 255px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}
