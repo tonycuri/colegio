@@ -162,7 +162,69 @@ header .telefonos {
   .frase p {
     padding: 50px 0;
     color: #FFF;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/***MAPA***/
+.mapa {
+  width: 100%; }
+  .mapa iframe {
+    width: 100%; }
+
+footer {
+  margin-top: 50px;
+  background: #5D0909;
+  color: #FFF; }
+  footer .menu {
+    width: 100%;
+    margin-top: 20px; }
+    footer .menu .nivel {
+      margin-bottom: 30px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+      padding-bottom: 10px; }
+      footer .menu .nivel p {
+        text-transform: uppercase;
+        margin: 10px 0 20px 0; }
+      footer .menu .nivel span {
+        margin-right: 10px;
+        margin-bottom: 25px;
+        display: block;
+        font-size: 1.1em; }
+        footer .menu .nivel span:before {
+          margin-right: 5px;
+          padding: 8px;
+          background: #FFF;
+          border-radius: 50%;
+          color: #5D0909; }
+  footer form {
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase; }
+    footer form .form {
+      margin-top: 10px; }
+    footer form input, footer form textarea {
+      width: 100%;
+      border: none;
+      margin-bottom: 10px;
+      padding: 10px 5px;
+      border-radius: 5px;
+      color: rgba(0, 0, 0, 0.8); }
+    footer form input[placeholder], footer form textarea[placeholder] {
+      font-size: 0.8em; }
+    footer form textarea {
+      height: 150px;
+      max-height: 200px; }
+  footer .copy {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.5); }
+    footer .copy p {
+      padding: 30px 0;
+      font-size: 0.8em;
+      text-align: center;
+      line-height: 20px; }
 
 @media screen and (min-width: 480px) {
   body {

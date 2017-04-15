@@ -102,6 +102,16 @@
     padding: 50px 0;
     color:#FFF;
     text-align: center;
-    // font-family:;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+/***MAPA***/
+.mapa{
+  width: 100%;
+  iframe{
+    width: 100%;
   }
 }
