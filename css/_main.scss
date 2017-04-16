@@ -52,47 +52,65 @@
   }
 }
 /******BLOG******/
-.blog .noticia{
+.blog{
   margin-bottom: 60px;
-  figure{
-    width: 100%;
-    margin: 0;
-    img{
+  .noticia{
+    margin-bottom: 20px;
+    figure{
       width: 100%;
+      margin: 0;
+      img{
+        width: 100%;
+      }
     }
-  }
-  .post .titulo{
-    margin: 10px 0px;
-    .nivel{
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.1em;
-      display:inline-block;
-      float:left;
+    .post{
+      .titulo{
+        margin: 10px 0px;
+        .nivel{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.1em;
+          display:inline-block;
+          float:left;
+        }
+        .fecha{
+          display:inline-block;
+          padding: 5px 10px;
+          background: $color1;
+          border-radius: 5px;
+          color: #fff;
+          float:right;
+        }
+      }
+      .texto{
+        max-height: 200px;
+        text-align: justify;
+        overflow: hidden;
+      }
+      a{
+        color:$color1;
+        float:right;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
     }
-    .fecha{
-      display:inline-block;
-      padding: 5px 10px;
-      background: $color1;
-      border-radius: 5px;
-      color: #fff;
-      float:right;
-    }
+
   }
-  .texto{
-    max-height: 200px;
-    text-align: justify;
-    overflow: hidden;
-  }
-  a{
-    color:$color1;
-    float:right;
+  >a{
     text-decoration: none;
-    &:hover{
-      text-decoration: underline;
-    }
+    float:right;
+    margin-bottom: 20px;
+    border:none;
+    padding: 10px 20px;
+    background: $color1;
+    border-radius: 5px;
+    color:#FFF;
   }
 }
+
+
 
 /******FRASE******/
 .frase{

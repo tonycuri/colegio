@@ -24,7 +24,8 @@ h2 {
   text-transform: uppercase; }
 
 header .telefonos {
-  display: none; }
+  display: none;
+  text-transform: uppercase; }
 
 #menu {
   margin-top: -32px;
@@ -122,38 +123,49 @@ header .telefonos {
         width: 100%; }
 
 /******BLOG******/
-.blog .noticia {
+.blog {
   margin-bottom: 60px; }
-  .blog .noticia figure {
-    width: 100%;
-    margin: 0; }
-    .blog .noticia figure img {
-      width: 100%; }
-  .blog .noticia .post .titulo {
-    margin: 10px 0px; }
-    .blog .noticia .post .titulo .nivel {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.1em;
-      display: inline-block;
-      float: left; }
-    .blog .noticia .post .titulo .fecha {
-      display: inline-block;
-      padding: 5px 10px;
-      background: #5D0909;
-      border-radius: 5px;
-      color: #fff;
-      float: right; }
-  .blog .noticia .texto {
-    max-height: 200px;
-    text-align: justify;
-    overflow: hidden; }
-  .blog .noticia a {
-    color: #5D0909;
+  .blog .noticia {
+    margin-bottom: 20px; }
+    .blog .noticia figure {
+      width: 100%;
+      margin: 0; }
+      .blog .noticia figure img {
+        width: 100%; }
+    .blog .noticia .post .titulo {
+      margin: 10px 0px; }
+      .blog .noticia .post .titulo .nivel {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.1em;
+        display: inline-block;
+        float: left; }
+      .blog .noticia .post .titulo .fecha {
+        display: inline-block;
+        padding: 5px 10px;
+        background: #5D0909;
+        border-radius: 5px;
+        color: #fff;
+        float: right; }
+    .blog .noticia .post .texto {
+      max-height: 200px;
+      text-align: justify;
+      overflow: hidden; }
+    .blog .noticia .post a {
+      color: #5D0909;
+      float: right;
+      text-decoration: none; }
+      .blog .noticia .post a:hover {
+        text-decoration: underline; }
+  .blog > a {
+    text-decoration: none;
     float: right;
-    text-decoration: none; }
-    .blog .noticia a:hover {
-      text-decoration: underline; }
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 20px;
+    background: #5D0909;
+    border-radius: 5px;
+    color: #FFF; }
 
 /******FRASE******/
 .frase {
@@ -187,14 +199,15 @@ footer {
       padding-bottom: 10px; }
       footer .menu .nivel p {
         text-transform: uppercase;
-        margin: 10px 0 20px 0; }
+        margin: 10px 0 30px 0;
+        font-size: 1.2em; }
       footer .menu .nivel span {
         margin-right: 10px;
         margin-bottom: 25px;
         display: block;
-        font-size: 1.1em; }
+        font-size: 1.3em; }
         footer .menu .nivel span:before {
-          margin-right: 5px;
+          margin-right: 15px;
           padding: 8px;
           background: #FFF;
           border-radius: 50%;
@@ -212,6 +225,11 @@ footer {
       padding: 10px 5px;
       border-radius: 5px;
       color: rgba(0, 0, 0, 0.8); }
+    footer form input[type="submit"] {
+      width: 100%;
+      color: #5D0909;
+      font-weight: bold;
+      font-size: 1.2em; }
     footer form input[placeholder], footer form textarea[placeholder] {
       font-size: 0.8em; }
     footer form textarea {
@@ -250,18 +268,37 @@ footer {
       .blog .noticia .post .texto {
         max-height: 120px; }
       .blog .noticia .post .boton {
-        margin-top: 10px; } }
+        margin-top: 10px; }
+
+  /***footer***/
+  footer .menu .nivel {
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+    border-bottom: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.6); }
+    footer .menu .nivel p {
+      font-size: 0.9em;
+      text-align: center; }
+    footer .menu .nivel span {
+      font-size: 0.9em; }
+      footer .menu .nivel span:before {
+        padding: 5px;
+        margin-left: 5px; }
+
+  footer .menu .nivel:last-child {
+    border-right: none; } }
 /*****************min-width: 767px**************/
 @media screen and (min-width: 767px) {
   body {
     background: orange; }
 
-  .telefonos {
+  header .telefonos {
     display: block;
     text-align: center;
     margin: 20px auto;
     height: 30px; }
-    .telefonos p {
+    header .telefonos p {
       display: inline-block;
       width: auto;
       font-size: 14px;
@@ -318,7 +355,42 @@ footer {
 
   /****BLOG*****/
   .blog .noticia .post .texto {
-    max-height: 180px; } }
+    max-height: 180px; }
+
+  /***FOOTER***/
+  footer .menu {
+    float: left;
+    border-right: 2px solid rgba(255, 255, 255, 0.6);
+    width: 35%; }
+    footer .menu .nivel {
+      margin-bottom: 10px;
+      padding-bottom: 0;
+      width: 100%;
+      float: none;
+      border-right: none; }
+      footer .menu .nivel p {
+        text-align: left;
+        margin-bottom: 15px; }
+      footer .menu .nivel span {
+        margin-bottom: 15px; }
+
+  footer form {
+    float: right;
+    width: 62%;
+    margin-top: 70px; }
+    footer form p {
+      margin-bottom: 20px; }
+    footer form .form {
+      width: 100%; }
+      footer form .form input {
+        width: 46%;
+        float: left;
+        margin-right: 1%;
+        margin-bottom: 20px; }
+    footer form input[type="submit"] {
+      width: 96%; }
+    footer form textarea {
+      width: 95%; } }
 /**************** min-width: 950px ************/
 @media screen and (min-width: 950px) {
   body {
