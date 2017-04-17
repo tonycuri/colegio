@@ -112,8 +112,6 @@
   }
 }
 
-
-
 /******FRASE******/
 .frase{
   width: 100%;
@@ -154,4 +152,36 @@
       }
     }
   }
+}
+
+/****BLOG PRINCIPAL****/
+.blog-principal{
+  margin-top: 30px;
+  .etiquetas{
+    color:$color1;
+    font-weight: bold;
+    text-transform: uppercase;
+    display:flex;
+    margin-bottom: 15px;
+    div{
+      border-right:1px solid $color1;
+      padding: 10px;
+      cursor:pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    div:first-child{
+      padding-left: 0;
+    }
+    div:last-child{
+      border-right: none;
+    }
+  }
+  .noticia{
+    margin-bottom: 50px;
+  }
+}
+aside{
+  display:none;
 }

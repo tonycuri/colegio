@@ -71,12 +71,11 @@
   header .telefonos{
     display:block;
     text-align: center;
-    margin:20px auto;
-    height: 30px;
+    margin:5px auto;
     p{
       display:inline-block;
       width:auto;
-      font-size: 14px;
+      font-size:0.7em;
       margin-right:25px;
     }
   }
@@ -95,19 +94,20 @@
       width: 100%;
       height: auto;
       background: $color1;
+      padding: 25px 0;
       a{
-        width: 35%;
+        width: 40%;
         display:inline-block;
         vertical-align: middle;
         figure{
-          width: 80%;
+          width: 100%;
           img{
             display:block;
           }
         }
       }
       nav{
-        width: 64%;
+        width: 58%;
         display:inline-block;
         vertical-align: middle;
 
@@ -196,6 +196,10 @@
       }
     }
   }
+  /****BLOG PRINCIPAL***/
+  .blog-principal{
+    margin-top: 80px;
+  }
 }
 /**************** min-width: 950px ************/
 @media screen and (min-width: 950px){
@@ -217,5 +221,48 @@
   /*******BLOG******/
   .blog .noticia .post .texto{
     max-height: 230px;
+  }
+  /****BLOG PRINCIPAL***/
+  main{
+    display:flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    .blog-principal{
+      margin-top: 120px;
+      width: 65%;
+      .etiquetas{
+        margin-bottom: 30px;
+      }
+    }
+    aside{
+      display:block;
+      width: 28%;
+      margin-top: 190px;
+      background: #7F3F3F;
+      padding: 10px;
+      border-radius: 3px;
+      h4{
+        text-transform: uppercase;
+        text-align: center;
+        background: #FFF;
+        padding: 10px 0;
+        color:$color1;
+        margin-bottom: 20px;
+      }
+      .noticia{
+        text-transform: uppercase;
+        color:#FFF;
+        margin-bottom: 20px;
+        border-bottom: 2px solid
+         rgba(255,255,255,0.5);
+         padding-bottom: 5px;
+         a{
+           text-decoration: none;
+           &:hover{
+             text-decoration: underline;
+           }
+         }
+      }
+    }
   }
 }
