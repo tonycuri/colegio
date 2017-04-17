@@ -16,6 +16,11 @@ body{
 a{
   color:#ffffff;
 }
+.active{
+  color:$color1;
+  background: #FFF;
+  border-radius: 5px;
+}
 
 .contenedor{
   width: 90%;
@@ -33,6 +38,17 @@ h2{
   padding: 10px 0;
   width:220px;
   text-transform: uppercase;
+}
+h3{
+  margin:20px 0px;
+  text-decoration: underline;
+}
+figure{
+  margin: 0;
+  width: 100%;
+}
+img{
+  width: 100%;
 }
 
 @import "header";

@@ -6,6 +6,11 @@ body {
 a {
   color: #ffffff; }
 
+.active {
+  color: #5D0909;
+  background: #FFF;
+  border-radius: 5px; }
+
 .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -23,6 +28,17 @@ h2 {
   width: 220px;
   text-transform: uppercase; }
 
+h3 {
+  margin: 20px 0px;
+  text-decoration: underline; }
+
+figure {
+  margin: 0;
+  width: 100%; }
+
+img {
+  width: 100%; }
+
 header .telefonos {
   display: none;
   text-transform: uppercase; }
@@ -31,17 +47,17 @@ header .telefonos {
   margin-top: -32px;
   background: #5D0909;
   position: relative;
-  height: 80px;
+  height: 120px;
   z-index: 99; }
   #menu h1 {
-    width: 250px; }
+    width: 250px;
+    display: flex; }
     #menu h1 img {
-      width: 100%;
-      margin-top: 10px; }
+      margin-top: 20px; }
   #menu span {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 10px;
     color: #fff;
     z-index: 99;
     font-size: 2em;
@@ -86,7 +102,9 @@ header .telefonos {
 
 .nosotros-img {
   margin-top: 20px;
-  width: 100%; }
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden; }
   .nosotros-img figure {
     margin: 0;
     width: 100%; }
@@ -186,33 +204,50 @@ header .telefonos {
   .mapa iframe {
     width: 100%; }
 
+/**** INICIAL****/
+.contenedor .secciones {
+  width: 100%; }
+  .contenedor .secciones .seccion {
+    width: 100%;
+    margin-bottom: 30px; }
+    .contenedor .secciones .seccion .texto {
+      width: 100%; }
+      .contenedor .secciones .seccion .texto .titulo {
+        margin: 10px 0;
+        color: #5D0909;
+        font-weight: bold; }
+      .contenedor .secciones .seccion .texto p {
+        text-align: justify;
+        line-height: 26px; }
+
 footer {
   margin-top: 50px;
   background: #5D0909;
   color: #FFF; }
-  footer .menu {
+  footer .menu, footer .menu-nivel {
     width: 100%;
     margin-top: 20px; }
-    footer .menu .nivel {
-      margin-bottom: 30px;
+    footer .menu .nivel, footer .menu-nivel .nivel {
+      margin-bottom: 10px;
       border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-      padding-bottom: 10px; }
-      footer .menu .nivel p {
+      padding-bottom: 5px; }
+      footer .menu .nivel p, footer .menu-nivel .nivel p {
         text-transform: uppercase;
-        margin: 10px 0 30px 0;
-        font-size: 1.2em; }
-      footer .menu .nivel span {
+        margin: 10px 0 30px 0; }
+      footer .menu .nivel span, footer .menu-nivel .nivel span {
         margin-right: 10px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         display: block;
-        font-size: 1.3em; }
-        footer .menu .nivel span:before {
+        font-size: 0.9em; }
+        footer .menu .nivel span:before, footer .menu-nivel .nivel span:before {
+          margin-left: 5px;
           margin-right: 15px;
-          padding: 8px;
+          padding: 5px;
           background: #FFF;
           border-radius: 50%;
           color: #5D0909; }
   footer form {
+    margin-top: 20px;
     width: 100%;
     font-weight: bold;
     text-transform: uppercase; }
@@ -245,11 +280,26 @@ footer {
       line-height: 20px; }
 
 @media screen and (min-width: 480px) {
-  body {
-    background: green; } }
+  /***INICIAL***/
+  .contenedor .secciones .seccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .contenedor .secciones .seccion figure {
+      width: 47%; }
+    .contenedor .secciones .seccion .texto {
+      width: 50%;
+      margin-left: 3%; } }
 @media screen and (min-width: 600px) {
-  body {
-    background: yellow; }
+  .nosotros .nosotros-text {
+    width: 50%;
+    display: inline-block; }
+  .nosotros .nosotros-img {
+    margin-top: 0;
+    margin-left: 1%;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top; }
 
   .galeria .fotos .foto {
     width: 24%; }
@@ -271,28 +321,19 @@ footer {
         margin-top: 10px; }
 
   /***footer***/
-  footer .menu .nivel {
+  footer .menu .nivel, footer .menu-nivel .nivel {
     width: 32%;
     float: left;
     margin-right: 1%;
     border-bottom: none;
     border-right: 2px solid rgba(255, 255, 255, 0.6); }
-    footer .menu .nivel p {
-      font-size: 0.9em;
+    footer .menu .nivel p, footer .menu-nivel .nivel p {
       text-align: center; }
-    footer .menu .nivel span {
-      font-size: 0.9em; }
-      footer .menu .nivel span:before {
-        padding: 5px;
-        margin-left: 5px; }
 
-  footer .menu .nivel:last-child {
+  footer .menu .nivel:last-child, footer .menu-nivel .nivel:last-child {
     border-right: none; } }
 /*****************min-width: 767px**************/
 @media screen and (min-width: 767px) {
-  body {
-    background: orange; }
-
   header .telefonos {
     display: block;
     text-align: center;
@@ -343,16 +384,6 @@ footer {
               #menu #card_menu nav ul li a:hover {
                 border-radius: 5px; }
 
-  .nosotros .nosotros-text {
-    width: 50%;
-    display: inline-block; }
-  .nosotros .nosotros-img {
-    margin-top: 0;
-    margin-left: 1%;
-    width: 48%;
-    display: inline-block;
-    vertical-align: top; }
-
   /****BLOG*****/
   .blog .noticia .post .texto {
     max-height: 180px; }
@@ -364,10 +395,11 @@ footer {
     width: 35%; }
     footer .menu .nivel {
       margin-bottom: 10px;
-      padding-bottom: 0;
+      padding-bottom: 10px;
       width: 100%;
       float: none;
-      border-right: none; }
+      border-right: none;
+      vertical-align: bottom; }
       footer .menu .nivel p {
         text-align: left;
         margin-bottom: 15px; }
@@ -390,12 +422,23 @@ footer {
     footer form input[type="submit"] {
       width: 96%; }
     footer form textarea {
-      width: 95%; } }
+      width: 95%; }
+
+  /*****INICIAL***/
+  .contenedor .secciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contenedor .secciones .seccion {
+      flex-direction: column;
+      width: 30%; }
+      .contenedor .secciones .seccion figure {
+        width: 100%; }
+      .contenedor .secciones .seccion .texto {
+        width: 100%;
+        margin: 0; } }
 /**************** min-width: 950px ************/
 @media screen and (min-width: 950px) {
-  body {
-    background: blue; }
-
   .nosotros .nosotros-text {
     width: 58%;
     display: inline-block;

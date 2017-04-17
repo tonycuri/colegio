@@ -2,7 +2,7 @@
 @font-face {
   font-family:'flexslider-icon';
   src: url('../fonts/flexslider-icon.eot');
-  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') 
+  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff')
   format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -85,16 +85,20 @@
 .flex-direction-nav a.flex-next:before{
   content:"\f002";
 }
-.flex-caption a{
+.flex-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-caption p{
   position:absolute;
-  top:50%;
-  margin-top:-30px;
-  text-align: center;
-  width: 100%;
+  top:40%;
   font-size: 2em;
-  text-decoration: none; 
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
   text-transform: uppercase;
+  color:#FFF;
+  padding: 10px 20px;
+  font-family: 'Playfair';
 }
 .flexslider:hover .flex-direction-nav .flex-prev,
 .flexslider:hover .flex-direction-nav .flex-next{
@@ -110,8 +114,13 @@
   .flex-direction-nav a{
     top:40%;
   }
-  .flex-caption a{
+  .flex-caption p{
     font-size: 3em;
-    top:40%;
+    top:35%;
+  }
+}
+@media screen and (min-width: 767px){
+  .flex-caption p{
+    top:28%;
   }
 }
